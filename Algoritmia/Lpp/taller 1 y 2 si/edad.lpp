@@ -1,0 +1,13 @@
+//te dice si eres mayor de edad 
+
+entero e, l
+inicio
+	escriba "Digite el año en el que nacio: "
+		lea e
+		l<-2019-e
+	Si l>18 Entonces
+		escriba "Usted es mayor de edad"
+	Sino
+		escriba "usted es menor de edad"	
+	Fin Si
+fin

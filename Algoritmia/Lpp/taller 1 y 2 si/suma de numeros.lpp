@@ -1,0 +1,17 @@
+//te dice que la suma de dos numeros es igual al tercero
+entero a, b, c
+inicio
+	escriba "Digite un numero: "
+		lea a
+	escriba "Digite otro numero: "
+		lea b
+	escriba "Digite otro numero: "
+		lea c
+
+	si a+b=c entonces
+		escriba a,"+",b," es igual a ",c
+	sino
+		escriba a,"+",b," no es igual a ",c
+	fin si
+fin
+	

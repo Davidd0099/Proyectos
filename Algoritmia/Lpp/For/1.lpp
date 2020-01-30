@@ -1,0 +1,15 @@
+entero suma, num, i
+
+inicio
+	suma <- 0
+	
+	para i<-1 hasta 10 haga 
+
+		escriba "Por favor digite  numero ",i,": "
+		lea num
+	
+		suma<-suma+num
+	fin para
+	
+	escriba "La suma es igual a: ", suma
+fin

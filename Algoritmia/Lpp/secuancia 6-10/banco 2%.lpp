@@ -1,0 +1,12 @@
+//Esto calcula la ganancia al invertir en un banco que paga a razon de 2% mensual
+//variables
+real d, m, a
+inicio
+escriba "digite el dinero a depositar: "
+lea d
+llamar nueva_linea
+escriba "digite los meses: "
+lea m
+a<-d*1.02*m
+escriba "el capital final es: ",a
+fin

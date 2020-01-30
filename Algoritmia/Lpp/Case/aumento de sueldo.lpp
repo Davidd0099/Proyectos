@@ -1,0 +1,57 @@
+//Da el aumento de sueldo segun el sueldo base
+real i, a
+entero n
+inicio
+	escriba "Digite 1 si su sueldo es menor a 800000" 
+	llamar nueva_linea
+	escriba "Digite 2 si su sueldo es mayor a 800001 y menor a 1000000"
+	llamar nueva_linea
+	escriba "Digite 3 si su sueldo es meyor a 1000001 y menor a 2000000"
+	llamar nueva_linea
+	escriba "Digite 4 si su sueldo es mayor a 2000001"
+	llamar nueva_linea
+	escriba "Digite una opcion: "	
+		lea n
+	caso n	
+		1:
+			llamar limpiar_pantalla
+			escriba "Digite su sueldo "
+				lea i
+			si i<=800000 entonces					
+				a<-i*0.2
+				escriba "El nuevo sueldo es ", i+a
+			fin si		
+		2:
+			llamar limpiar_pantalla
+			escriba "Digite su sueldo "
+				lea i
+			si (i>=800001) o (i<=100000)entonces
+				a<-i*0.1
+				escriba "El nuevo sueldo es ", i+a
+			fin si	
+		3:
+			llamar limpiar_pantalla
+			escriba "Digite su sueldo "
+				lea i
+			si(i>=1000001) o (i<=2000000)entonces
+				a<-i*0.05
+				escriba "El nuevo sueldo es ", i+a
+			fin si
+		4:
+			llamar limpiar_pantalla
+			escriba "Digite su sueldo "
+				lea i
+		si i>=2000001 entonces
+			a<-i*0.03
+			escriba "El nuevo sueldo es ", i+a
+		fin si
+		sino:
+			Escriba "No digito lo que se le pidio"
+	fin caso
+fin
+
+
+
+
+
+

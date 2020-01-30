@@ -1,0 +1,54 @@
+//calcula notas 
+//variable
+real p1, p2, p3, p, pv, nexf, vexf, vtb, ntb, t
+entero i
+inicio
+
+//parciales
+Para i <- 1 Hasta 3 Haga
+	Si i=1 Entonces
+		Escriba "nota del parcial 1: "
+			lea p1
+	Fin Si
+llamar nueva_linea
+	Si i=2 Entonces
+		Escriba "nota del parcial 2: "
+			lea p2
+	Fin Si
+llamar nueva_linea
+	Si i=3 Entonces
+		Escriba "nota del parcial 3: "
+			lea p3
+	Fin Si
+llamar nueva_linea
+Fin Para
+
+//promedio de examenes y valor al 55%
+p<-(p1+p2+p3)/3
+pv<-p*0.55
+
+//examen final
+escriba "digite la nota del examen final: "
+lea nexf
+llamar nueva_linea
+//valor al 33% del examen final
+vexf<-nexf*0.30
+
+//trabajo especial
+escriba "digite la nota del trabajo especial: "
+lea ntb
+llamar nueva_linea
+//valor al 15% del trabajo especial
+vtb<-ntb*0.15
+
+escriba "el valor al 33% del examen fianl es ", vexf
+llamar nueva_linea
+escriba "el valor de los examenes al 55% vale ", pv
+llamar nueva_linea
+escriba "el valor al 15% del trabajo especial es ",vtb
+llamar nueva_linea
+//suma de notas
+t<-vexf+pv+vtb
+Escriba "La nota final es ",t
+
+fin

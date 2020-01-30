@@ -1,0 +1,20 @@
+//Digitas una letra y te dice si es una vocal
+caracter n
+inicio 
+	escriba "Digite una vocal: "
+	lea n
+	Caso n
+		'a' , 'A' :
+			escriba n, " es una vocal"
+		'E' , 'e':
+			escriba n, " es una vocal"
+		'I' , 'i' :
+			escriba n, " es una vocal"
+		'O' , 'o':
+			escriba n, " es una vocal"
+		'U' , 'u':
+			escriba n, " es una vocal"
+		sino:
+			escriba "No le pedi lo que digito"
+	Fin Caso
+fin

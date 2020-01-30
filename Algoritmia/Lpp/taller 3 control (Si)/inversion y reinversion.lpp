@@ -1,0 +1,27 @@
+//te dice cuanto dinero tendras despues de invertir dos veces
+//variables
+real di, m, ti, ui, pi, po, iii 
+inicio
+	//toma de datos
+	escriba "Digite el dinero a invertir: "
+		lea di
+	escriba "Digite los meses durante los que va a invertir el dinero: "
+		lea m
+	escriba "Digite la tasa de intereses que desea entre 1% y 10%: "
+		lea ti
+	si (ti<11) y (ti>0) entonces
+		ti<-ti/100
+		ui<-1+(ti/100)
+	fin si
+	
+	pi<-di*ti*m
+	po<-di*ui*m
+	
+	escriba "La primer inversion tuvo intereses de $",pi
+llamar nueva_linea
+	si pi>250000 entonces 
+		iii<-po*m*ui
+		escriba "En 6 meses tendra $",iii," despues de la reinversion"
+	fin si
+	
+fin

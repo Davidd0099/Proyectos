@@ -1,0 +1,20 @@
+//solo te deja digitar s o n
+cadena[1] s
+inicio
+
+
+	escriba "digite una n o una s: "
+		lea s
+		llamar nueva_linea
+
+	si s="s"entonces	
+		escriba s," bien"	
+	sino
+		si s="n"entonces
+			escriba s," bien"
+		sino
+			escriba "error"
+		fin si
+	fin si
+fin
+	

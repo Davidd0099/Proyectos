@@ -1,0 +1,24 @@
+//te dice si un numero es de 1, 2, 3 o 4 cifras
+entero i
+inicio
+	escriba "Digiteun numero: "
+		lea i
+
+	Si i<=9 entonces
+			escriba i," es un numero de una cifra"
+	Sino
+		si ((i>=10) y (i<=99)) entonces
+				escriba i," es un numero de dos cifras"
+			sino
+			Si ((i>=100) y (i<=999)) entonces
+					escriba i," es un numero de tres cifras"
+			sino
+			Si ((i>=1000) y (i<=9999)) entonces
+					escriba i," es un numero de cuatro cifras"
+			sino
+				escriba "Error de entrada" 
+			fin si
+		fin si
+	fin si
+fin si
+fin

@@ -1,0 +1,19 @@
+//variables
+real c, f, k, r
+inicio
+escriba "defina la temperatura en celcius: "
+lea c
+llamar nueva_linea
+//opreacion a Fahrenheit
+f<-(9/5*c)+32
+// operacion a Kelvin
+k<-c+273.15
+//opreacion a Renkine
+r<-9/5*(c+273.17)
+escriba "la temperatura en Fahrenheit es",f,"F"
+llamar nueva_linea
+escriba "la temperatura en Kelvin es",k,"K"
+llamar nueva_linea
+escriba "la temperatura en Renkine es",r,"R"
+fin
+

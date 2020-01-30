@@ -1,0 +1,24 @@
+//dice el descuento segun la clave y la info del producto
+cadena [25] p
+cadena [1] kp
+real po, pd
+inicio
+	escriba "Digite el nombre del producto "
+		lea p
+	escriba "Digite el precio original del producto "
+		lea po
+	escriba "Digite la clave del producto "
+		lea kp
+	
+	si kp="a"entonces
+		pd<-po-(po*0.1)
+		escriba "El producto de clave A tiene un precio de $",pd
+	sino
+		si kp="b"entonces
+			pd<-po-(po*0.2)
+		escriba "El producto de clave B tiene un precio de $",pd
+		fin si
+	fin si
+fin
+		
+			

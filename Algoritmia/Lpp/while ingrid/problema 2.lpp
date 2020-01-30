@@ -1,0 +1,10 @@
+//
+entero i
+inicio
+	i<-0
+	mientras i<20 haga
+	i<-i+1
+	escriba i 
+	llamar nueva_linea
+	fin mientras
+fin

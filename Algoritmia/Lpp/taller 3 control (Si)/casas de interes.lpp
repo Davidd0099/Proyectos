@@ -1,0 +1,25 @@
+//calcula la couta inicial y la mensualidad a pagar de la casa
+real i, pc, pm, ci
+inicio
+	escriba "Digite los ingresos del comprador: "
+		lea i
+	escriba "Digite el precio de la casa: "
+		lea pc
+	si (i<800000) o (i=800000)entonces
+		ci<-pc*0.15
+		pm<-pc/120
+		escriba "El comprador debe pagar $",ci," de cuota inicial"
+		llamar nueva_linea
+		escriba "El comprador debe pagar $",pm," en cuotas mensuales por 10 años"
+		llamar nueva_linea
+	sino
+		si (i>800000)entonces
+			ci<-pc*0.3
+			pm<-pc/84
+			escriba "El comprador debe pagar $",ci," de cuota inicial" 
+			llamar nueva_linea
+			escriba "El comprador debe pagar $",pm," en cuotas mensuales por 7 años"
+		fin si
+	fin si
+fin
+	

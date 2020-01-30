@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: ;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: grey; 
+}
+
+.tloreg{
+	margin-top: 25px;
+	float: right;
+	text-align: center;
+	margin-right: 50px;
+}
+
+.tlog{
+	margin-top: 30px;
+	margin-left: 650px;
+}
+
+.tmenu{
+	margin-left: 380px;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 24px;
+}
+
+.tdmenumodel{
+	padding: 5px;
+}
+
+.tcrud{
+	  text-align: center;
+	margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.tbcrud{
+    text-align: center;
+    margin-left: auto;
+	margin-right: auto;
+
+
+}
+
+.tdcrud{
+	padding: 5px;
+	font-size: 22px;
+}
+
+.tdcrudc{
+	padding: 5px;
+	font-size: 18px;
+}

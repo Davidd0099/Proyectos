@@ -1,0 +1,437 @@
+entero t, v, s
+real iva, p, pd,piva
+
+
+inicio
+iva<-0.21
+	escriba "Digite 1 si desea comida vegetariana"
+		llamar nueva_linea
+	escriba "Digite 2 si desea comida no vegetariana"
+		llamar nueva_linea
+	escriba "Digite 3 si desea comida rapida"
+		llamar nueva_linea
+	escriba "Digite una opcion: "
+		lea t
+		
+	caso t
+		1: //VEGETARIANA
+				llamar limpiar_pantalla
+			escriba "Usted eligio comida vegetariana"
+				llamar nueva_linea
+			escriba "Digite 1 si desea ver las sopas de vegetales"
+				llamar nueva_linea
+			escriba "Digite 2 si desea ver las ensaladas"
+				llamar nueva_linea
+			escriba "Digite 3 si desea ver los jugos"
+				llamar nueva_linea
+			escriba "digite su eleccion: "
+				lea v
+					
+			caso v
+				1: //SOPA DE VEGETALES
+						llamar limpiar_pantalla
+					escriba "SOPAS DE VEGETALES"
+						llamar nueva_linea
+					escriba "Digite 1 para Sopa de verduras a $1000"
+						llamar nueva_linea
+					escriba "Digite 2 para sopa de verduras con pastas a $2000"
+						llamar nueva_linea
+					escriba "Digite 3 para Sopa de verduras con mani a $3000"
+						llamar nueva_linea
+					escriba "Digite su eleccion "
+						lea s
+					caso s
+						1:
+								llamar limpiar_pantalla
+							p<-1000
+							pd<-p-(p*0.2)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio sopa de verduras a $1000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						2:
+								llamar limpiar_pantalla
+							p<-2000
+							pd<-p-(p*0.2)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio sopa de verduras con pastas a $2000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						3:
+								llamar limpiar_pantalla								
+							p<-3000
+							pd<-p-(p*0.2)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio sopa de verduras con mani a $3000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						sino:
+							escriba "Eso no esta en el menu"
+					fin caso
+				2: //ENSALDAS
+						llamar limpiar_pantalla
+					escriba "Ensaladas"
+						llamar nueva_linea
+					escriba "Digite 1 para Ensalada simple a $1000"
+						llamar nueva_linea
+					escriba "Digite 2 para ensalada con pastas a $2000"
+						llamar nueva_linea
+					escriba "Digite 3 para ensalada con mani a $3000"
+						llamar nueva_linea
+					escriba "Digite su eleccion "
+						lea s
+						
+					caso s
+						1:
+								llamar limpiar_pantalla
+							p<-1000
+							pd<-p-(p*0.2)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio ensalada simple a $1000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						2:
+								llamar limpiar_pantalla
+							p<-2000
+							pd<-p-(p*0.2)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio ensalada con pastas a $2000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						3:
+								llamar limpiar_pantalla								
+							p<-3000
+							pd<-p-(p*0.2)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio ensalada con mani a $3000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						sino:
+							escriba "Eso no esta en el menu"
+					fin caso
+				3: //JUGOS
+						llamar limpiar_pantalla
+					escriba "JUGOS"
+						llamar nueva_linea
+					escriba "Digite 1 para jugo de mango a $1000"
+						llamar nueva_linea
+					escriba "Digite 2 para limonada de aguacate a $2000"
+						llamar nueva_linea
+					escriba "Digite 3 para limonada de fresa a $3000"
+						llamar nueva_linea
+					escriba "Digite su eleccion "
+						lea s
+						
+					caso s
+						1:
+								llamar limpiar_pantalla
+							p<-1000
+							pd<-p-(p*0.2)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio jugo de mango a $1000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						2:
+								llamar limpiar_pantalla
+							p<-2000
+							pd<-p-(p*0.2)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio limonada de aguacate a $2000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						3:
+								llamar limpiar_pantalla								
+							p<-3000
+							pd<-p-(p*0.2)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio limonada de fresa a $3000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						sino:
+							escriba "Eso no esta en el menu"
+					fin caso
+			fin caso		
+		2:	//NOVEGETARIANA
+				llamar limpiar_pantalla
+			escriba "Usted eligio comida NO vegetariana"
+				llamar nueva_linea
+			escriba "Digite 1 si desea ver los platos con cerdo"
+				llamar nueva_linea
+			escriba "Digite 2 si desea ver los platos con pollo"
+				llamar nueva_linea
+			escriba "Digite 3 si desea ver los platos con carne"
+				llamar nueva_linea
+			escriba "digite su eleccion: "
+				lea v
+					
+			caso v
+				1: //CERDO
+						llamar limpiar_pantalla
+					escriba "CERDO"
+						llamar nueva_linea
+					escriba "Digite 1 para cerdo a la naranja a $1000"
+						llamar nueva_linea
+					escriba "Digite 2 para cerdo teriyaky a $2000"
+						llamar nueva_linea
+					escriba "Digite 3 para cerdo con mani a $3000"
+						llamar nueva_linea
+					escriba "Digite su eleccion "
+						lea s
+					caso s
+						1:
+								llamar limpiar_pantalla
+							p<-1000
+							pd<-p-(p*0.1)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio cerdo a la naranja a $1000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						2:
+								llamar limpiar_pantalla
+							p<-2000
+							pd<-p-(p*0.1)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio cerdo a la teriyaky a $2000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						3:
+								llamar limpiar_pantalla								
+							p<-3000
+							pd<-p-(p*0.1)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio cerdo con mani a $3000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						sino:
+							escriba "Eso no esta en el menu"
+					fin caso
+				2: //POLLO
+						llamar limpiar_pantalla
+					escriba "POLLO"
+						llamar nueva_linea
+					escriba "Digite 1 para Pollo al horno a $1000"
+						llamar nueva_linea
+					escriba "Digite 2 para pollo a la inglesa a $2000"
+						llamar nueva_linea
+					escriba "Digite 3 para pollo chino a $3000"
+						llamar nueva_linea
+					escriba "Digite su eleccion "
+						lea s
+						
+					caso s
+						1:
+								llamar limpiar_pantalla
+							p<-1000
+							pd<-p-(p*0.1)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio pollo al horno a $1000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						2:
+								llamar limpiar_pantalla
+							p<-2000
+							pd<-p-(p*0.1)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio pollo a la inglesa a $2000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						3:
+								llamar limpiar_pantalla								
+							p<-3000
+							pd<-p-(p*0.1)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio pollo chino a $3000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						sino:
+							escriba "Eso no esta en el menu"
+					fin caso
+				3: //CARNE
+						llamar limpiar_pantalla
+					escriba "CARNE"
+						llamar nueva_linea
+					escriba "Digite 1 para carne desmechadaa $1000"
+						llamar nueva_linea
+					escriba "Digite 2 para carne con guiso a $2000"
+						llamar nueva_linea
+					escriba "Digite 3 para carne al ajo a $3000"
+						llamar nueva_linea
+					escriba "Digite su eleccion "
+						lea s
+						
+					caso s
+						1:
+								llamar limpiar_pantalla
+							p<-1000
+							pd<-p-(p*0.1)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio carne desmechada a $1000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						2:
+								llamar limpiar_pantalla
+							p<-2000
+							pd<-p-(p*0.1)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio carne con guiso a $2000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						3:
+								llamar limpiar_pantalla								
+							p<-3000
+							pd<-p-(p*0.1)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio carne al ajo a $3000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						sino:
+							escriba "Eso no esta en el menu"
+					fin caso
+			fin caso
+		3:
+		 //COMIDA RAPIDA
+				llamar limpiar_pantalla
+			escriba "Usted eligio comida rapida"
+				llamar nueva_linea
+			escriba "Digite 1 si desea ver los Perros calientes"
+				llamar nueva_linea
+			escriba "Digite 2 si desea ver las hamburgesas"
+				llamar nueva_linea
+			escriba "digite su eleccion: "
+				lea v
+					
+			caso v
+				1: //SOPA DE VEGETALES
+						llamar limpiar_pantalla
+					escriba "PERROS CALIENTES"
+						llamar nueva_linea
+					escriba "Digite 1 para perro sencillo a $1000"
+						llamar nueva_linea
+					escriba "Digite 2 para perro especial a $2000"
+						llamar nueva_linea
+					escriba "Digite 3 para perro doble a $3000"
+						llamar nueva_linea
+					escriba "Digite su eleccion "
+						lea s
+					caso s
+						1:
+								llamar limpiar_pantalla
+							p<-1000
+							pd<-p-(p*0.05)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio perro sencillo a $1000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						2:
+								llamar limpiar_pantalla
+							p<-2000
+							pd<-p-(p*0.05)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio perro especial a $2000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						3:
+								llamar limpiar_pantalla								
+							p<-3000
+							pd<-p-(p*0.05)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio perro doble a $3000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						sino:
+							escriba "Eso no esta en el menu"
+					fin caso
+				2: //HAMBURGUESAS
+						llamar limpiar_pantalla
+					escriba "HAMBURGUESAS"
+						llamar nueva_linea
+					escriba "Digite 1 para hamburguesa sencilla a $1000"
+						llamar nueva_linea
+					escriba "Digite 2 para hamburguesa doble a $2000"
+						llamar nueva_linea
+					escriba "Digite 3 para hamburugesa especial a $3000"
+						llamar nueva_linea
+					escriba "Digite su eleccion "
+						lea s
+						
+					caso s
+						1:
+								llamar limpiar_pantalla
+							p<-1000
+							pd<-p-(p*0.05)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio hamburguesa sencilla a $1000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						2:
+								llamar limpiar_pantalla
+							p<-2000
+							pd<-p-(p*0.05)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio hamburguesa doble a $2000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						3:
+								llamar limpiar_pantalla								
+							p<-3000
+							pd<-p-(p*0.05)
+							piva<-p+(pd*0.21)
+							escriba "Usted pidio hamburguesa especial a $3000"
+								llamar nueva_linea
+							escriba "Con el descuento sin el iva le queda en $",pd
+								llamar nueva_linea
+							escriba "Mas el iva le queda en $",piva
+						sino:
+							escriba "Eso no esta en el menu"
+					fin caso
+			fin caso
+		sino:
+			escriba "Eso no esta en el menu"
+	fin caso
+fin

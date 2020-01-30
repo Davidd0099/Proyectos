@@ -1,0 +1,17 @@
+//
+real d, prom, f
+entero cant, n
+inicio
+prom<-0
+escriba "Ingrese cantidad de notas: "
+lea cant
+f<-cant
+mientras cant>0 haga
+cant<-cant-1
+escriba "Notas: "
+lea n
+prom<-prom+n
+fin mientras 
+d<-prom/f
+escriba " Su promedio de notas es: ",d
+fin

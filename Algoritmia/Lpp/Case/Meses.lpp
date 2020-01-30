@@ -1,0 +1,34 @@
+//das un numero del 1 al 12 y te dice el mes correpondiente
+entero n
+inicio 
+	escriba "Digite un numero del 1 al 12: "
+	lea n
+	Caso n
+		1:
+			escriba "Enero"
+		2:
+			escriba "Febrero"
+		3:
+			escriba "Marzo"
+		4:
+			escriba "Abril"
+		5:
+			escriba "Mayo"
+		6:
+			escriba "Junio"
+		7:
+			escriba "Julio"
+		8:
+			escriba "Agosto"
+		9:
+			escriba "Septiembre"
+		10:
+			escriba "Octubre"
+		11:
+			escriba "Noviembre"
+		12:
+			escriba "Diciembre"
+		sino:
+			escriba "No le pedi lo que digito"
+	Fin Caso
+fin

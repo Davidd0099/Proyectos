@@ -1,0 +1,20 @@
+entero i, n
+inicio 
+
+	i<-0
+	
+	mientras i<100 haga
+		i<-i+1
+		
+		
+	si (i mod 3=0) entonces
+			escriba i 
+			llamar nueva_linea
+		fin si
+	fin mientras
+	
+fin
+
+
+
+

@@ -1,0 +1,97 @@
+//te dice tu IMC
+real p, e, i
+entero s
+inicio
+	escriba "Digite 1 si usted es hombre"
+	llamar nueva_linea
+	escriba "Digite 2 si usted es mujer"
+	llamar nueva_linea
+	escriba "Digite una opcion"
+		lea s
+	caso s
+	1: 
+		llamar limpiar_pantalla
+		escriba "Digite su peso en kilogramos: "
+			lea p
+		llamar nueva_linea
+		escriba "Digite su estatura en centimetros: "
+			lea e
+		e<-e/100
+		i<-p/(e*e)
+		si i<=16.00 entonces
+			escriba "Su IMC es ",i," y se clasifica como delgadez severa"
+		sino
+			si (i>=16.01) y (i<=16.99) entonces
+				escriba "Su IMC es ",i," y se clasifica como Delgadez moderada"
+			sino
+				si (i>=17.00) y (i<=18.49) entonces
+					escriba "Su IMC es ",i," y se clasifica como delgadez leve"
+				sino
+					si (i>=18.5) y (i<=24.99) entonces
+						escriba "Su IMC es ",i," y se clasifica como normal"
+					sino
+						si (i>=25.00) y (i<=29.99) entonces
+							escriba "Su IMC es ",i," y se clasifica como preobeso"
+						sino
+							si (i>=30.00) y (i<=34.99) entonces
+								escriba "Su IMC es ",i," y se clasifica como obesidad leve"
+							sino
+								si (i>=35.00) y (i<=34.99) entonces
+									escriba "Su IMC es ",i," y se clasifica como obesidad media"
+								sino
+									si i>=40.00 entonces
+										escriba "Su IMC es ",i," y se clasifica como obesidad morbida"
+									sino
+										escriba "Digito algo mal"
+									fin si
+								fin si
+							fin si
+						fin si
+					fin si
+				fin si
+			fin si
+		fin si
+	2:
+		llamar limpiar_pantalla
+		escriba "Digite su peso en kilogramos: "
+			lea p
+		llamar nueva_linea
+		escriba "Digite su estatura en centimetros: "
+			lea e
+		e<-e/100
+		i<-p/(e*e)
+		si i<=16.00 entonces
+			escriba "Su IMC es ",i," y se clasifica como delgadez severa"
+		sino
+			si (i>=16.01) y (i<=16.99) entonces
+				escriba "Su IMC es ",i," y se clasifica como Delgadez moderada"
+			sino
+				si (i>=17.00) y (i<=18.49) entonces
+					escriba "Su IMC es ",i," y se clasifica como delgadez leve"
+				sino
+					si (i>=18.5) y (i<=24.99) entonces
+						escriba "Su IMC es ",i," y se clasifica como normal"
+					sino
+						si (i>=25.00) y (i<=29.99) entonces
+							escriba "Su IMC es ",i," y se clasifica como preobeso"
+						sino
+							si (i>=30.00) y (i<=34.99) entonces
+								escriba "Su IMC es ",i," y se clasifica como obesidad leve"
+							sino
+								si (i>=35.00) y (i<=34.99) entonces
+									escriba "Su IMC es ",i," y se clasifica como obesidad media"
+								sino
+									si i>=40.00 entonces
+										escriba "Su IMC es ",i," y se clasifica como obesidad morbida"
+									sino
+										escriba "Digito algo mal"
+									fin si
+								fin si
+							fin si
+						fin si
+					fin si
+				fin si
+			fin si
+		fin si
+	fin caso
+fin

@@ -1,0 +1,18 @@
+entero num1, num2, sum, rest, dvi, mulp
+inicio
+escriba "digite un numero: "
+lea num1
+escriba "digite otro numero: "
+lea num2
+sum<-num1+num2
+rest<-num1-num2
+dvi<-num1/num2
+mulp<-num1*num2
+escriba sum
+llamar nueva_linea
+escriba rest
+llamar nueva_linea
+escriba dvi
+llamar nueva_linea
+escriba mulp
+fin

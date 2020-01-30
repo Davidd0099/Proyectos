@@ -1,0 +1,24 @@
+C
+R
+U
+D
+
+	DDL
+gestionar la informacion 
+
+consultar (read) select
+insertar (crate) insert
+modificar (update) update
+borrar (delete) delete 
+
+-Select*From ciudad;
+-insert into ciudad(codCiu,nomCiu,detCiu)
+	values (´001´,´cali´,´076´);
+-
+
+
+
+update ciudad set nomciu="palmira"
+where nomciu="Tulua";
+
+delete from ciudad codciu="001"

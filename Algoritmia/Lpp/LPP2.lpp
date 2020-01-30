@@ -1,0 +1,18 @@
+
+cadena [30] nombre, apellido, direccion, rut
+inicio
+	escriba "Introduzca su nombre: "
+	lea nombre
+	llamar nueva_linea
+	escriba "Introduzca su apellido: "
+	lea apellido
+	llamar nueva_linea
+	escriba "Introduzca su rut: "
+	lea rut
+	llamar nueva_linea
+	escriba "Introduzca su direccion: "
+	lea direccion
+	escriba "Su nombre y apellido es "+nombre+" "+apellido
+	llamar nueva_linea
+	escriba "Su rut y direccion son "+ rut+" y "+direccion
+Fin

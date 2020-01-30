@@ -1,0 +1,22 @@
+//lee 3 valors y te muestra el menor
+
+entero i1, i2, i3
+inicio		
+	escriba "Digite numero 1: "
+		lea i1
+	escriba "Digite numero 2: "
+		lea i2
+	escriba "Digite numero 3: "
+		lea i3
+	Si ((i1<i2) y (i1<i3)) Entonces
+		escriba i1," es el menor"
+	sino
+		Si ((i2<i1) y (i2<i3)) Entonces
+			escriba i2," es el menor"
+		sino
+			Si ((i3<i2) y (i3<i1)) Entonces
+				escriba i3," es el menor"
+			fin si		
+		Fin Si
+	fin si
+fin	

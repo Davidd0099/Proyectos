@@ -1,0 +1,16 @@
+//Esto calcula el area de un rectangulo
+//variables
+Real b, h, area
+inicio
+//definir variables
+escriba "defina el ancho: "
+lea b
+llamar nueva_linea
+escriba "defina la altura: "
+lea h
+llamar nueva_linea
+//operacion
+area<-(b*h)
+escriba "el rectangulo tiene un area de ",area
+fin
+

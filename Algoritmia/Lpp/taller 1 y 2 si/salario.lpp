@@ -1,0 +1,23 @@
+//calcula el salario semanal
+entero i, h
+
+inicio 
+	escriba "Cuantas horas trabajo el obrero?: "
+		lea h
+	Si h<20 entonces
+			i<-20000*h
+			escriba "El obrero ganara $",i," esta semana"
+	sino
+		si ((20<h) y (h<30)) entonces
+			i<-30000*h
+			escriba "El obrero ganara $",i," esta semana"
+		sino
+			si h>30 entonces
+				i<-50000*h
+				escriba "El obrero ganara $",i," esta semana"
+			fin si
+		fin si
+	fin si
+fin
+
+

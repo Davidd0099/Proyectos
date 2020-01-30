@@ -1,0 +1,11 @@
+//Esto calcula el area de un cuadrado
+//variables
+real L, area
+inicio
+//definir varaibles
+escriba "defina el lado del cuadrado: "
+lea L
+//opreacion
+area<-L*L
+escriba "el area del cuadrado es ",area
+fin

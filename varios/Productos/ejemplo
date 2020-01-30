@@ -1,0 +1,2 @@
+select * from cliente,factura,detallefactura,producto where
+cliente.id = factura.cliente_id and factura.id = detallefactura.idfactura and detallefactura.idproducto = producto.id and cliente.id = 3; 

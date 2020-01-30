@@ -1,0 +1,14 @@
+//Esto calcula el area de un triangulo
+//variables
+real b, h, area
+inicio
+//definir varaibles
+escriba "defina la base: "
+lea b
+llamar nueva_linea
+escriba "defina la altura: "
+lea h
+//operaciones
+area<-(b*h)/2
+escriba "el area del triangulo es", area,"CM^2"
+final

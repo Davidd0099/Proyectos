@@ -1,0 +1,13 @@
+//suma n primeros numeros naturales y te los muestra :D  
+entero n, x, s
+inicio
+	escriba "ingresar un numero :"
+		lea n
+	s<-0
+	x<-1
+	mientras x<=n haga
+		s<-s+x
+		x<-x+1
+	fin mientras
+	escriba "la suma de los ",n," primeros numeros naturales es ",s
+fin

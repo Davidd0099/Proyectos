@@ -1,0 +1,60 @@
+//Te dice el dia exacto del año segun la fecha ingresada
+real i
+entero n
+inicio 
+	escriba "Digite el mes: "
+	lea n
+	Caso n
+		1:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de enero al dia ",i," es ",i
+		2:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de febrero al dia ",i," es ",i+31
+		3:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de marzo al dia ",i," es ",i+59
+		4:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de abril al dia ",i," es ",i+90
+		5:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de mayo al dia ",i," es ",i+120
+		6:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de junio al dia ",i," es  ",i+151
+		7:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de julio al dia ",i," es ",i+181
+		8:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de agosto al dia ",i," es ",i+212
+		9:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de septiembre al dia ",i," es ",i+243
+		10:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de octubre al dia ",i," es ",i+273
+		11:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de noviembre al dia ",i," es ",i+304
+		12:
+			escriba "Digite el dia del mes: "
+				lea i
+			escriba "El dia exacto del año al mes de diciembre al dia ",i," es ",i+334
+			
+		sino:
+			escriba "No le pedi lo que digito"
+	Fin Caso
+fin

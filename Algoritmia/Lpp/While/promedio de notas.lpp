@@ -1,0 +1,18 @@
+// promedio de n notas
+real n1, acum, p, i, n
+inicio
+	escriba "Digite las notas a promediar: "
+	lea n
+	p<-n
+	mientras n>0 haga
+		n<-n-1
+		escriba "Digite nota #1 de 1 a 100: "
+			lea n1
+		acum<-acum+n1
+		escriba acum
+		llamar nueva_linea
+	fin mientras
+	
+	i<-acum/p
+	escriba "el promedio de notas es: ",i
+fin

@@ -1,0 +1,14 @@
+//Esto calcula el area de la elipse
+//Variables
+real a, b, area
+inicio
+//definir variables
+escriba "defina radio menor: "
+lea a
+llamar nueva_linea
+escriba "defina radio mayor: "
+lea b
+//operacion
+area<-a*b*3.14
+escriba "el area de la elipse es ",area
+fin

@@ -1,0 +1,17 @@
+//dice cuantas calorias quema una persona enferma
+cadena [1] e
+real cs
+inicio
+	escriba "Digite una S si la persona esta sentada y una D si la persona esta dormida: "
+		Lea e
+	si e="s" entonces 
+		cs<-1.66*1440
+		escriba "La persona quemo ", cs," calorias en 24 horas/un dia estando sentada"
+		sino
+		si e="d" entonces
+			cs<-1.08*1440
+			escriba "La persona quemo ", cs," calorias en 24 horas/un dia estando dormida"
+		fin si
+	fin si
+fin
+		

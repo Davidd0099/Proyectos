@@ -1,0 +1,47 @@
+entero a, b, c, i1, i2, i3
+inicio		
+	escriba "Digite numero 1: "
+		lea a
+	escriba "Digite numero 2: "
+		lea b
+	escriba "Digite numero 3: "
+		lea c
+	si ((a>b)y(a>c)y(b>c))entonces
+		i1<-a
+		i2<-b
+		i3<-c
+	fin si
+	
+	si ((a>b)y(a>c)y(c>b))entonces
+		i1<-a
+		i2<-c
+		i3<-b
+	fin si
+	
+	si ((b>a)y(b>c)y(a>c))entonces
+		i1<-b
+		i2<-a
+		i3<-c
+	fin si
+		
+	si ((b>c)y(b>a)y(c>a))entonces
+		i1<-b
+		i2<-c
+		i3<-a
+	fin si	
+	
+	si ((c>a)y(c>b)y(b>a))entonces
+		i1<-c
+		i2<-b
+		i3<-a
+	fin si	
+	
+	si ((c>a)y(c>b)y(a>b))entonces
+		i1<-c
+		i2<-a
+		i3<-b
+	fin si	
+	escriba i3," ",i2," ",i1
+fin	
+
+i1>i2>i3

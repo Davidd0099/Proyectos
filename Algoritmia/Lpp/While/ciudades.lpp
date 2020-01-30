@@ -1,0 +1,39 @@
+// te dice que ciudad tiene mayor poblacion
+entero nd,nc,m,d,c,np
+cadena [15] dn,pm,pl,dl
+inicio
+	nd<-1
+	nc<-1 
+	m<-1
+	d<-1
+	c<-1   
+	mientras d < 3 haga
+			llamar nueva_linea
+	escriba "Digite el nombre del departamento ",nd,": "
+		lea dn
+	escriba dn
+			llamar nueva_linea
+
+		mientras c<3 haga
+					llamar nueva_linea
+			escriba "Escriba el nombre de la ciudad ",nc, ": "
+				lea pm
+			escriba "Digite el numero de habitantes de la ciudad ",pm, ": "
+				lea np
+			si (m<=np) Entonces         
+				m<-np
+				pl <- pm
+				dl <- dn
+					fin si
+		nc<-nc+ 1
+		c<-c+1         
+		fin mientras
+	c <- 1         
+	nd<-nd+1
+	d<-d+1
+	fin mientras
+	llamar nueva_linea
+
+llamar nueva_linea
+escriba "La ciudad con mayor poblacion es ",pl," del departamento de ",dl," con  ",m," habitantes"
+fin

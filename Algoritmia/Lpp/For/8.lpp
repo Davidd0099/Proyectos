@@ -1,0 +1,26 @@
+entero n, i, a, x, b
+inicio
+
+a<-0
+b<-1
+
+	escriba "Digite la cantidad de numeros: "
+		lea x
+	para i<-0 hasta x haga
+		escriba "Digite un numeros: " 
+			lea n
+		si n = 0 entonces
+			a<-a+1
+		fin si
+		
+		si n > 0 entonces
+			b<-b*n
+		fin si
+	fin para
+	
+	llamar nueva_linea
+	escriba "La cantidad de 0s es: ",a
+	llamar nueva_linea
+	escriba "La multiplicacion de los numeros mayores a 0 es: ",b
+	
+fin

@@ -1,0 +1,16 @@
+entero suma, num, i, n
+
+inicio
+	suma <- 0
+	escriba "Digite la cantidad de numeros a sumar: "
+		lea n
+	para i<-1 hasta n haga 
+
+		escriba "Por favor digite  numero ",i,": "
+			lea num
+	
+		suma<-suma+num
+	fin para
+	
+	escriba "La suma es igual a: ", suma
+fin

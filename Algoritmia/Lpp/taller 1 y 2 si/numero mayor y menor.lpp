@@ -1,0 +1,78 @@
+//te dice el numero menor y el numero mayor
+entero a, b, c, d, e, f, i1, i2
+
+inicio
+
+
+
+
+
+	escriba "digite un numero: "
+		lea a
+	escriba "digite otro numero: "
+		lea b
+	escriba "digite otro numero: "
+		lea c
+	escriba "digite otro numero: "
+		lea d
+	escriba "digite otro numero: "
+		lea e
+	escriba "digite otro numero: "
+		lea f
+
+	si (b<a)y(c<a)y(d<a)y(e<a)y(f<a)entonces
+	i1<-a
+	sino
+		si(a<b)y(f<b)y(c<b)y(d<b)y(e<b)entonces
+		i1<-b
+		sino
+			si (a<c)y(b<c)y(d<c)y(e<c)y(f<c)entonces
+			i1<-c
+			sino
+				si(a<d)y(b<d)y(c<d)y(e<d)y(f<d)entonces
+				i1<-d
+				sino
+					si (a<e)y(b<e)y(c<e)y(d<e)y(f<e)entonces
+					i1<-e
+					sino
+						si(a<f)y(b<f)y(c<f)y(d<f)y(e<f)entonces
+						i1<-f
+						sino
+						fin si
+					fin si
+				fin si
+			fin si
+		fin si
+	fin si
+	
+	
+	si (b>a)y(c>a)y(d>a)y(e>a)y(f>a)entonces
+	i2<-a
+	sino
+		si(a>b)y(f>b)y(c>b)y(d>b)y(e>b)entonces
+		i2<-b
+		sino
+			si (a>c)y(b>c)y(d>c)y(e>c)y(f>c)entonces
+			i2<-c
+			sino
+				si(a>d)y(b>d)y(c>d)y(e>d)y(f>d)entonces
+				i2<-d
+				sino
+					si (a>e)y(b>e)y(c>e)y(d>e)y(f>e)entonces
+					i2<-e
+					sino
+						si(a>f)y(b>f)y(c>f)y(d>f)y(e>f)entonces
+						i2<-f
+						sino
+						fin si
+					fin si
+				fin si
+			fin si
+		fin si
+	fin si
+			
+	escriba i1," Es mayor"
+	llamar nueva_linea
+	escriba i2," Es menor"
+fin
+

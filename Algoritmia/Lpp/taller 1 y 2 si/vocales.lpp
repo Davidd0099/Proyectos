@@ -1,0 +1,31 @@
+//te dice si es una vocal
+
+cadena [1] a
+inicio
+	escriba "digite una letra: "
+		lea a
+		llamar nueva_linea
+		
+	si (a="a") o (a="A") entonces
+		escriba a," es una vocal"
+	sino
+		si (a="e") o (a="E") entonces
+			escriba a," es una vocal"
+		sino
+			si (a="i") o (a="I") entonces
+				escriba a," es una vocal"
+			sino
+				si (a="o") o (a="O") entonces
+					escriba a," es una vocal"
+				sino
+					si (a="u") o (a="U") entonces
+						escriba a," es una vocal"
+					sino
+					escriba a," no es una vocal"
+					fin si
+				fin si
+			fin si
+		fin si
+	fin si
+fin
+		

@@ -1,0 +1,10 @@
+cadena [20] comida, bebida
+inicio
+	escriba "Que comida me vas a dar?: "
+	lea comida
+	llamar nueva_linea
+	escriba "Que me daras de beber?: "
+	lea bebida
+	llamar nueva_linea
+	escriba "Su comida es: "+comida+" y su bebida es: "+bebida  
+fin

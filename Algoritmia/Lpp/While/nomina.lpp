@@ -1,0 +1,16 @@
+//Calcula el total de la nomina para N obreros
+real nh, nht, tn, s
+inicio
+	escriba "Digite el numero de obreros: "
+		lea nh
+	escriba "Digite el numero de horas trabajadas: "
+		lea nht
+	tn<-0
+	mientras nh>0 haga 
+		s <- nht*3500
+		tn<-tn+s
+		nh<-nh-1
+	fin mientras 
+	escriba "El total de la nomina a cancelar de ",nh," obreros es ",tn
+fin
+	

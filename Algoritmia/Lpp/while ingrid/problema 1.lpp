@@ -1,0 +1,17 @@
+//
+entero i, s, n
+inicio
+	s<-0
+	i<-1
+	escriba " Ingrese Numero: "
+	 lea n
+
+	mientras i<=n haga
+	s<-s+i
+	i<-i+1
+	
+	
+	fin mientras
+	escriba s
+fin
+

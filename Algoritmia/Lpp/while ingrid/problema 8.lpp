@@ -1,0 +1,20 @@
+//
+real c, n, tn, ex, ob, ht, s
+inicio
+n<-0
+escriba "Ingrese numero de Obreros: "
+lea ob
+escriba "Ingrese Horas Trabajadas: "
+lea ht
+mientras ob>0 haga 
+s<-ht*3500
+n<-n+s
+ob<- ob-1
+fin mientras
+escriba "Cancelacion de nomina: ",n
+
+
+
+
+
+fin

@@ -1,0 +1,21 @@
+//variables
+real cf, ck, cr, f, k, r
+inicio
+escriba "digite grados fareheit: "
+lea f
+escriba "digite grados kelvin: "
+lea k
+escriba "digite grados renkine: "
+lea R
+//opreaciones
+cf<-0.55*(f-32)
+ck<-k-273.15
+cr<-0.55*(r-491.67)
+escriba "la temperatura es ",cf
+llamar nueva_linea
+escriba "la temperatura es ",ck
+llamar nueva_linea
+escriba "la temperatura es ",cr
+llamar nueva_linea
+fin
+

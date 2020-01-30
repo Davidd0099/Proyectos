@@ -1,0 +1,23 @@
+entero n, i, a, x
+inicio
+a<-1
+
+escriba "Ingrese la cantidad de numeros: "
+	lea n
+	
+para i<-0 hasta n haga
+
+	escriba "Digite un numero: "
+		lea x
+
+	si a<=x entonces 
+		a<-x
+		
+	fin si
+	
+fin para
+escriba "el numero mayor es: ", a
+fin
+
+
+

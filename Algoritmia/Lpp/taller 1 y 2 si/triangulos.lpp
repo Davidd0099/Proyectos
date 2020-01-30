@@ -1,0 +1,28 @@
+//te dice que tipo de triangulo es
+//variables
+real l1, l2, l3
+inicio
+	escriba "digite el lado 1 del triangulo: "
+		lea l1
+	escriba "digite el lado 2 del triangulo: "
+		lea l2
+	escriba "digite el lado 3 del triangulo: "
+		lea l3
+		
+	Si ((l1=l2) y (l1=l3) y (l3=l2)) 
+		Entonces 
+			escriba "Es un triangulo equilatero"
+	Sino
+	
+		si ((l1=l2) o (l1=l3) o (l2=l3)) 
+			entonces 
+				escriba "Es un triangulo isósceles"
+			sino
+			
+			Si ((l1<>l2) y (l1<>l3) y (l2<>l3))
+				Entonces
+					escriba "Es un triangulo Escaleno"
+			fin si				
+		fin si	
+	Fin Si	
+fin	

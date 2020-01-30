@@ -1,0 +1,20 @@
+//Variables
+real ph, pm, th, tm, t
+inicio
+	escriba "digite numero de estudiantes: "
+		lea t
+llamar nueva_linea
+	escriba "digite numero de hombres: "
+		lea th
+llamar nueva_linea
+	escriba "digite numero de mujeres: "
+		lea tm
+llamar nueva_linea
+//operaciones
+ph<-(th*100)/t
+pm<-(tm*100)/t
+escriba "El porcentaje de mujeres es ",pm,"%"
+llamar nueva_linea
+escriba "El porcentaje de hombres es ",ph,"%"
+fin
+

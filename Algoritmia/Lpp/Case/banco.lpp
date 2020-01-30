@@ -1,0 +1,151 @@
+entero p, r, nc, dt
+real d
+cadena [10] user, pss, ps, ps1, ps2, ps3, user1, pss1
+inicio
+	
+		user<-"admin" 
+		pss<-"admin"
+		escriba "Digite su usuario: "
+			lea user1
+			llamar nueva_linea
+		escriba "Digite su password: "
+			lea pss1
+			llamar nueva_linea
+		si (user = user) y (pss1=pss)entonces	
+			d<-1000000
+		
+			escriba "Digite 1 para Retiros"
+				llamar nueva_linea
+			escriba "Digite 2 para consulta de saldo"
+				llamar nueva_linea
+			escriba "Digite 3 para transferencias"
+				llamar nueva_linea
+			escriba "Digite 4 para cambio de clave"
+				llamar nueva_linea
+			escriba "Digite una opcion: "
+				lea p
+			caso p
+				1:
+							llamar limpiar_pantalla
+						escriba "RETIROS"
+							llamar nueva_linea
+						escriba "Digite 1 para retira $50000"
+							llamar nueva_linea
+						escriba "Digite 2 para retira $100000"
+							llamar nueva_linea
+						escriba "Digite 3 para retira $200000"
+							llamar nueva_linea
+						escriba "Digite 4 para retira $500000"
+							llamar nueva_linea
+						escriba "Digite la opcion del dinero que desea retirar: "
+							lea r
+						caso r					
+							1:
+								llamar limpiar_pantalla 
+									si d>50000 entonces
+										d<-d-50000
+										escriba "Usted ha retirado $50000"
+											llamar nueva_linea
+										escriba "Su nuevo saldo es de: ",d
+									sino
+										escriba "No tiene dinero suficiente para hacer el retiro"
+									fin si
+							2:
+								llamar limpiar_pantalla 
+									si d>100000 entonces
+										d<-d-100000
+										escriba "Usted ha retirado $100000"
+											llamar nueva_linea
+										escriba "Su nuevo saldo es de: ",d
+									sino
+										escriba "No tiene dinero suficiente para hacer el retiro"
+									fin si
+							3:
+								llamar limpiar_pantalla 
+									si d>200000 entonces
+										d<-d-200000
+										escriba "Usted ha retirado $200000"
+											llamar nueva_linea
+										escriba "Su nuevo saldo es de: ",d
+									sino
+										escriba "No tiene dinero suficiente para hacer el retiro"
+									fin si
+							4:
+								llamar limpiar_pantalla 
+									si d>500000 entonces
+										d<-d-500000
+										escriba "Usted ha retirado $500000"
+											llamar nueva_linea
+										escriba "Su nuevo saldo es de: ",d
+									sino
+										escriba "No tiene dinero suficiente para hacer el retiro"
+									fin si
+							sino:
+							
+						fin caso
+				2:
+					llamar limpiar_pantalla 
+					escriba "CONSULTA DE SALDO"
+						llamar nueva_linea
+					escriba "Su saldo es ",d
+				
+				3:
+					llamar limpiar_pantalla 
+					escriba "TRANSFERENCIA DE SALDO"
+						llamar nueva_linea
+					escriba "Digite el numero de cuenta al que desea hacer la transferencia: "
+						lea nc
+							llamar nueva_linea
+					escriba "Digite la cantidad a transferir: "
+						lea dt
+							llamar nueva_linea
+					Si d>dt entonces 
+						d<-d-dt
+						escriba "Se han transferido $",dt," a a cuenta con numero ",nc
+							llamar nueva_linea
+						escriba "Su nuevo saldo es $",d
+					sino 
+						escriba "No tiene saldo suficiente para esta transferencia"
+					fin si
+				4:
+					llamar limpiar_pantalla 
+					escriba "CAMBIO DE CLAVE"
+						llamar nueva_linea
+					escriba "Digite su clave: "
+						lea ps
+					si ps=pss entonces
+						escriba "Digite su nueva clave: "
+							lea ps1
+						escriba "Digite confirme la clave: "
+							lea ps2
+						si ps1=ps2 entonces
+							pss<-ps1
+							escriba "Su nueva clave es ",pss
+								llamar nueva_linea
+						sino
+								escriba "Las contraceñas no coinciden"
+						fin si
+					sino
+						escriba "Las contraceñas no coinciden"
+						escriba "Operacion cancelada"
+					fin si
+				sino:
+					escriba "Eso no esta en el menu"				
+			fin caso
+		sino
+			si (user <> "admin") y (pss = "admin")  entonces
+				escriba "Usuario incorrecto, intenlo de nuevo"
+					llamar nueva_linea
+			sino
+				si (user = "admin") y (pss <> "admin") entonces
+					escriba "Password incorrecto, intentelo de nuevo"
+						llamar nueva_linea
+				sino
+					si (user <> "admin") y (pss <> "admin") entonces
+						escriba "Usuario y password incorrectos, intentelo de nuevo"
+							llamar nueva_linea
+					fin si
+				fin si
+			fin si
+		fin si
+fin		

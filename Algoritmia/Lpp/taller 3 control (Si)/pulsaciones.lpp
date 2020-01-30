@@ -1,0 +1,18 @@
+//numero de pulsaciones si es mujer o  hombre
+real e, puls
+cadena [1] s
+inicio
+	escriba "Digite su edad: "
+		lea e
+	escriba "Digite su sexo ¿m o h?: "
+		lea s
+	si s="h"entonces
+		puls<-(220-e)/10
+		escriba "el numero de pulsaciones por cada 10 segundos de ejercicio aerobico de un hombre de ",e," años es ",puls
+	sino
+		si s="m"entonces
+			puls<-(210-e)/10
+			escriba "el numero de pulsaciones por cada 10 segundos de ejercicio aerobico de una mujer de ",e," años es ",puls
+		fin si
+	fin si
+fin

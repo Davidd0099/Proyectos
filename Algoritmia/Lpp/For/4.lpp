@@ -1,0 +1,23 @@
+entero i
+real suma, nota, prom
+inicio
+
+	suma <- 0
+	
+	para i<-1 hasta 7 haga
+	
+		escriba "Por favor digite nota ",i,": "
+			lea nota
+			
+		suma <- suma + nota
+	fin para 
+	
+	llamar nueva_linea
+	
+	prom <- suma/7
+	
+	escriba "la suma de las notas es: ",suma
+	llamar nueva_linea
+	escriba "El promedio de notas es : ",prom
+	
+fin	

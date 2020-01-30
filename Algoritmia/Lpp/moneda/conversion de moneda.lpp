@@ -1,0 +1,36 @@
+//esto hace conversiones de moneda
+//varaible
+real pc, dam, dau, pu, pm, le, sp, pa
+inicio 
+	escriba "pesos colombianos a convertir: "
+		lea pc
+llamar nueva_linea
+//dolar americano
+dam<-pc*0.00030
+//dolar australiano
+dau<-pc*0.00043
+//peso urugayo
+pu<-pc*0.011
+//peso mexicano
+pm<-pc*0.0058
+//libra esterlina
+le<-pc*0.00023
+//sol peruano
+sp<-pc*0.0010
+//peso argentino
+pa<-pc*0.014
+
+	escriba pc," pesos colombianos son ",dam," dolares americanos"
+llamar nueva_linea 
+	escriba pc," pesos colombianos son ",dau," dolares australianos"
+llamar nueva_linea
+	escriba pc," pesos colombianos son ",pu," pesos urugayos"
+llamar nueva_linea
+	escriba pc," pesos colombianos son ",pm," pesos mexicanos"
+llamar nueva_linea
+	escriba pc," pesos colombianos son ",le," libras esterlinas"
+llamar nueva_linea
+	escriba pc," pesos colombianos son ",sp," soles peruanos"
+llamar nueva_linea
+	escriba pc," pesos colombianos son ",pa," pesos argentinos"
+fin

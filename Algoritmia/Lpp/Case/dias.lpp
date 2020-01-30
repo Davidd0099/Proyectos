@@ -1,0 +1,24 @@
+//das un numero y te dice el dia de la semana
+entero n
+inicio 
+	escriba "Digite un numero del 1 al 7: "
+	lea n
+	Caso n
+		1:
+			escriba "Lunes"
+		2:
+			escriba "Martes"
+		3:
+			escriba "Miercoles"
+		4:
+			escriba "Jueves"
+		5:
+			escriba "Viernes"
+		6:
+			escriba "Sabado"
+		7:
+			escriba "Domingo"
+		sino:
+			escriba "No le pedi lo que digito"
+	Fin Caso
+fin

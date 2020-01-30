@@ -1,0 +1,15 @@
+//estructuras de control (while)
+entero p, n
+inicio
+	n<-0
+	mientras n<10 haga 
+	n<-n+1
+	escriba "Ingrese Numero: "	
+	lea p
+	si p<0 entonces 
+	llamar nueva_linea
+	   escriba p," es Negativo"
+		llamar nueva_linea   
+	fin si
+	fin mientras
+fin

@@ -1,0 +1,15 @@
+//Esto calcula el area de un trapecio
+//variables
+real b1, b2, h, area
+inicio
+//definir varaibles
+escriba "defina la base mayor: "
+lea b1
+escriba "de la base menor: "
+lea b2
+escriba "defina la altura: " 
+lea h
+//operacion
+area<-(b1+b2)*h/2
+escriba "el area del trapecio es ",area
+fin

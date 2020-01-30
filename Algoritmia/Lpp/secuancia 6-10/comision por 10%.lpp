@@ -1,0 +1,30 @@
+//da el valor de las comisiones y el sueldo totals
+//variables
+real sb, ventas, st, ec
+inicio
+
+	escriba "digite sueldo base: "
+		lea sb
+llamar nueva_linea
+	escriba "Cuantas ventas hizo: "
+		lea ventas
+llamar nueva_linea
+
+//operaciones
+ec<-sb*0.1*ventas
+st<-sb+ec
+
+//resultado
+	escriba "El extra por comision es: ",ec
+llamar nueva_linea
+	escriba "El sueldo total es: ",st
+fin
+
+
+
+
+
+sb= sueldo base
+ec= extra por comision del 10%
+ventas = numero ventas
+st = sueldo total

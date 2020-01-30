@@ -1,0 +1,17 @@
+//Imprime solo los numeros negativos que digites
+entero i, n1, a
+
+inicio
+	i<-0
+	i<-i+1
+	mientras i<10 haga
+	i<-i+1
+		escriba "Digite un numero entero: "
+			lea n1
+			
+		si n1<0 entonces
+			escriba n1
+				llamar nueva_linea
+			fin si
+	fin mientras
+fin

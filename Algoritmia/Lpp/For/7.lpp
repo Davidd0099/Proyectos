@@ -1,0 +1,11 @@
+entero n, i
+inicio
+para i<-0 hasta 10 haga
+	escriba "Digite un numero: "
+		lea n
+	si n > 0 entonces 
+		escriba n
+		llamar nueva_linea
+	fin si
+fin para
+fin

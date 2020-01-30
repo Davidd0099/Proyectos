@@ -1,0 +1,10 @@
+//variables
+real c, cf, vr
+inicio
+escriba "valor de la compra inicial: "
+lea c
+llamar nueva_linea
+vr<-c*0.15
+cf<-c-vr
+escriba "El valor final es: ",cf
+fin

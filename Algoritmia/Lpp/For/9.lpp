@@ -1,0 +1,11 @@
+entero n, i
+inicio
+escriba "Digite el numero que desea multiplicar: "
+	lea n
+
+para i<-0 hasta 12 haga
+
+	escriba n,"*",i,"=",(n*i)
+	llamar nueva_linea
+fin para
+fin

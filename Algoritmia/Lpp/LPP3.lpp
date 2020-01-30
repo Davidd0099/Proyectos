@@ -1,0 +1,11 @@
+Entero sueldo, aumento
+Cadena[25] nombre
+Inicio
+Escriba "Ingresar el nombre del empleado: "
+Lea nombre
+Escriba "Ingresar el sueldo del empleado: "
+Lea sueldo
+Aumento<-sueldo * 1.25
+Escriba "Nuevo sueldo con el 25% de aumento "
+Escriba aumento
+Fin

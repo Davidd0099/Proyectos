@@ -1,0 +1,19 @@
+//descuento del 20%
+real i, if
+
+inicio
+	escriba "De cuanto fue la compra del cliente: "
+		lea i
+
+	si i>200000 entonces
+		i<-i-(i*0.2)
+		escriba "El cliente tiene un descuento del 20% y pagara $",i
+	sino
+		escriba "El cliente tiene que pagar $",i
+	Fin si
+fin
+
+
+
+	
+	

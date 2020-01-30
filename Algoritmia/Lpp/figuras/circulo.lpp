@@ -1,0 +1,11 @@
+//Esto calcula el area de un circulo
+//variables
+real R, area
+inicio
+//definir variables
+escriba "defina el radio: "
+lea R
+//opreacion
+area<-3.14*r^2
+escriba "el area del circulo es ", area,"CM^2"
+fin

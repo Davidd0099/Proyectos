@@ -1,0 +1,39 @@
+form {
+    color: white;
+ 
+    border-radius: 34px 34px 34px 34px;
+    -moz-border-radius: 34px 34px 34px 34px;
+    -webkit-border-radius: 34px 34px 34px 34px;
+    border: 13px solid #ffffff;
+
+    padding: 5%;
+    margin: 5%;
+    
+    width: 400px;
+
+    display: block
+    
+r
+
+}
+  
+body{
+    background-color: black;
+}
+
+label{
+    display: block
+}
+
+input{
+    display: block
+    
+}
+
+#study{
+    display: inline
+}
+
+#lg{
+    display: inline;
+}
